@@ -49,9 +49,9 @@ export class App extends React.Component {
 
   // ЗАПРОС
   AddRequest = request => {
-    this.setState({ request });
+    this.setState({ request, page: 1 });
   };
-// ДОЗАГРУЗКА СТРАНИЦ
+  // ДОЗАГРУЗКА СТРАНИЦ
   loadMoreBtnClick = () => {
     const nextRequest = this.state.request;
     const page = this.state.page;
